@@ -20,17 +20,16 @@ body {
   }
   
   .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
     background: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    width: 50%;
+    padding: 20px;
   }
   
   h1 {
-    text-align: center;
     color: #333;
+    font-size: 2vw;
   }
   
   .form-group {
@@ -58,7 +57,7 @@ body {
   
   button {
     display: block;
-    width: 100%;
+    width: 25%;
     padding: 10px;
     background-color: #338C9C;
     color: #ffffff;
