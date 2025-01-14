@@ -71,6 +71,177 @@
                             </label>
                         </div>
                     </div>
+
+
+
+                    <div class="select">
+                        <div class="select_top">
+                            <h4>Task Strategy</h4>
+                            <p>Chose to automate or manually approve tasks</p>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="selection_container">
+                            <label class="option">
+                                <div class="top_top">
+                                    <div class="icon">✨</div>
+                                    <input type="radio" name="mode" value="automatic" checked>
+                                </div>
+                                <div class="card">
+                                    <div class="text">
+                                        <h4>Automatic</h4>
+                                        <p>Emails are sent automatically</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="option">
+                                <div class="top_top">
+                                    <div class="icon"><i class="fa-regular fa-clock"></i></div>
+                                    <input type="radio" name="mode" value="manual">
+                                </div>
+                                <div class="card">
+                                    <div class="text">
+                                        <h4>Manual</h4>
+                                        <p>Review & approve tasks manually</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <!--  -->
+                    </div>
+
+
+
+                    <!--  -->
+
+                    <div class="email">
+                        <div class="email_top">
+                            <h3>Email</h3>
+                            <p>Outbound email settings</p>
+                        </div>
+                        
+                            <div class="custom_input">
+                                <div class="icon">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span class="name">Stephen Hakemi</span>
+                                </div>
+                                <div class="details">
+                                    <span class="email">stephen@wiza.com</span>
+                                    <span>&#9662;</span>
+                                </div>
+                            </div>
+
+                            <div class="tow_in">
+                                <div class="one_inp">
+                                    <label for="">Send Limit</label>
+                                    <input type="number" placeholder="per day">
+                                </div>
+                                <div class="tow_inp">
+                                    <label for="">Throttle delay</label>
+                                    <input type="number" placeholder="seconds">
+                                </div>
+
+                            </div>
+                    </div>
+
+
+                    <!--  -->
+
+                    <div class="scheduling">
+                        <div class="scheduling-container">
+                            <h2>Scheduling</h2>
+                            <p>Control when emails are sent out</p>
+                            
+                            <div class="form-group">
+                              <label for="run-time">Run time</label>
+                              <div class="input-group">
+                                <select id="run-time">
+                                  <option>Starts now</option>
+                                  <option>Start later</option>
+                                </select>
+                                <input type="date">
+                              </div>
+                            </div>
+                        
+                            <div class="form-group">
+                              <label for="sending-schedule">Sending schedule</label>
+                              <select id="sending-schedule">
+                                <option>7am - 9pm (Monday - Friday)</option>
+                                <option>24/7</option>
+                              </select>
+                            </div>
+                        
+                            <div class="form-group">
+                              <label for="timezone">Fallback timezone</label>
+                              <select id="timezone">
+                                <option>Eastern Time</option>
+                                <option>Central Time</option>
+                                <option>Pacific Time</option>
+                              </select>
+                            </div>
+                          </div>
+                    </div>
+
+
+
+                    <!--  -->
+
+                    <div class="containerr">
+                        <section class="miscellaneous">
+                          <h2>Miscellaneous</h2>
+                          <p>Extra campaign settings</p>
+                          
+                          <div class="form-group">
+                            <label for="global-cc">Global CC <span class="tooltip">ⓘ</span></label>
+                            <div class="input-wrapper">
+                              <input type="email" id="global-cc" placeholder="Add email">
+                            </div>
+                          </div>
+                          
+                          <div class="form-group">
+                            <label for="global-bcc">Global BCC <span class="tooltip">ⓘ</span></label>
+                            <div class="input-wrapper">
+                              <input type="email" id="global-bcc" placeholder="Add email">
+                            </div>
+                          </div>
+                        </section>
+                        
+                        <section class="tracking">
+                          <h2>Tracking</h2>
+                          <p>Know what's happening to your campaign</p>
+                          
+                          <div class="toggle-group">
+                            <label>
+                              <span>Track openings</span>
+                              <input type="checkbox" checked>
+                              <span class="slider"></span>
+                            </label>
+                            <p>Keep track of who's opening your emails</p>
+                          </div>
+                          
+                          <div class="toggle-group">
+                            <label>
+                              <span>Track link clicks</span>
+                              <input type="checkbox" checked>
+                              <span class="slider"></span>
+                            </label>
+                            <p>Track which links are the most popular</p>
+                          </div>
+                          
+                          <div class="toggle-group">
+                            <label>
+                              <span>Include unsubscribe link</span>
+                              <input type="checkbox">
+                              <span class="slider"></span>
+                            </label>
+                            <p>Allow recipients to unsubscribe</p>
+                          </div>
+                        </section>
+                      </div>
+
+                      <button>Submit</button>
+
                 </div>
 
             </form>
