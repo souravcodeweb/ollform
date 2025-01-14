@@ -3,46 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Step Navigation Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" class="nav-item contact active">
+            <i class="fa-solid fa-address-book"></i>
+            <span>1. Contact</span>
+        </a>
+        
+        <a href="#" class="nav-item steps">
+            <i class="fa-solid fa-forward-step"></i>
+            <span>2. Steps</span>
+        </a>
+        
+        <a href="#" class="nav-item setting">
+            <i class="fa-solid fa-gear"></i>
+            <span>3. Settings</span>
+        </a>
+        
+        <a href="#" class="nav-item overview">
+            <i class="fa-solid fa-eye"></i>
+            <span>4. Overview</span>
+        </a>
+    </nav>
 
-
+    <!-- Forms -->
     <div class="container">
-        <h1>School Information and Policies</h1>
-        <br>
-        <form id="schoolInfoForm">
-          <div class="form-group">
-            <label for="schoolName">School Name:</label>
-            <input type="text" id="schoolName" placeholder="Enter school name" required>
-          </div>
-    
-          <div class="form-group">
-            <label for="location">Location:</label>
-            <input type="text" id="location" placeholder="Enter school location" required>
-          </div>
-    
-          <div class="form-group">
-            <label for="contact">Contact Information:</label>
-            <input type="text" id="contact" placeholder="Enter contact details" required>
-          </div>
-    
-          <div class="form-group">
-            <label for="principalProfile">Principal's Profile:</label>
-            <textarea id="principalProfile" placeholder="Enter principal's profile, achievements, and vision" required></textarea>
-          </div>
-    
-          <div class="form-group">
-            <label for="missionValues">Mission and Values:</label>
-            <textarea id="missionValues" placeholder="Enter school motto, vision statement, and core values" required></textarea>
-          </div>
-    
-          <button type="button" id="submitBtn">Submit</button>
-        </form>
-    
-        <!-- <div id="output" class="output"></div> -->
-      </div>
-    
+        <!-- Contact Form -->
+        <div class="form-step active" id="contactForm">
+            <h1>Contacts</h1>
+            <form>
+                <div class="in_data">
+                    <label for="schoolName">School name</label>
+                    <input type="text" id="schoolName" placeholder="Enter school name" required>
+                </div>
+                <div class="in_data">
+                    <label for="schoolLocation">School location</label>
+                    <input type="text" id="schoolLocation" placeholder="Enter school location" required>
+                </div>
+                <div class="in_data">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" placeholder="Enter email ID" required>
+                </div>
+                <div class="in_data">
+                    <label for="principalProfile">Principal's Profile</label>
+                    <textarea id="principalProfile" placeholder="Enter principal's profile, achievements, and vision" required></textarea>
+                </div>
+                <div class="in_data">
+                    <label for="missionValues">Mission and Values</label>
+                    <textarea id="missionValues" placeholder="Enter school motto, vision statement, and core values" required></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Steps Form -->
+        <div class="form-step" id="stepsForm">
+            <h1>Steps</h1>
+            <p>Content for steps form goes here...</p>
+        </div>
+
+        <!-- Settings Form -->
+        <div class="form-step" id="settingsForm">
+            <h1>Settings</h1>
+            <p>Content for settings form goes here...</p>
+        </div>
+
+        <!-- Overview Section -->
+        <div class="form-step" id="overviewSection">
+            <h1>Overview</h1>
+            <div id="overviewContent">
+                <!-- Overview data will be dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom">
+        <button id="prevBtn"><span><i class="fa-solid fa-arrow-left"></i></span> <span>Previous</span></button>
+        <button id="nextBtn"><span>Next</span> <span><i class="fa-solid fa-arrow-right"></i></span></button>
+    </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
