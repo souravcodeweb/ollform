@@ -27,7 +27,7 @@ function updateStep() {
 
     // Toggle button visibility
     prevBtn.style.display = currentStep === 0 ? "none" : "inline-block";
-    nextBtn.textContent = currentStep === steps.length - 1 ? "Finish" : "Next";
+    nextBtn.textContent = currentStep === steps.length - 1 ? "Finish" : "Submit";
 
     // If on the overview step, populate the data
     if (currentStep === steps.length - 1) {
