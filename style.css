@@ -13,215 +13,161 @@ body {
     margin: 0;
     padding: 0;
   }
-/* 
-  nav{
-    width: 100%;
-    height: 7vh;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-  }
-  
-  nav a {
-    color: #000;
-    border: 1px solid #8952FF;
-    padding: 0.2vw 1vw;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 0.8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-  } */
-
-
-  /* conatct form */
-/* 
- .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 1vw 0;
- }
-
- .contact_form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 1vw;
-    padding: 1vw;
- }
-
- .contact_form h1 {
-    font-size: 1.5vw;
- }
-
- .contact_form p{
-    font-size: 0.8vw;
- }
-
- .contact_form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1vw;
- }
-
- .contact_form .in_data {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5vw;
- }
-
- .contact_form .in_data input {
-    width: 60%;
-    height: 2.5vw;
-    padding: 0 1vw;
-    outline: none;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    border-radius: 10px;
-    font-size: 1vw;
-}
-
-.contact_form .in_data textarea {
-    width: 60%;
-    height: 6vw;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    border: none;
-    padding: 1vw;
-    outline: none;
-    border-radius: 10px;
-}
- 
-
-
-.bottom {
-    display: flex;
-    width: 100%;
-    height: 4vw;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 3vw;
-    margin-top: 4%;
-}
-
-.bottom button {
-    padding: 0.5vw 1vw;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    justify-content: center;
-}
-
-.bottom button:nth-child(2) {
-    background-color: #8952FF;
-    color: #fff;
-} */
-
-
 
 
 nav {
+    width: 100%;
+    height: 4vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: #338C9C;
-    padding: 10px;
-    color: #fff;
-}
-
-.nav-item {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 14px;
-    display: flex;
     align-items: center;
-    gap: 5px;
-}
-
-.nav-item.active {
-    background: #225E69;
-}
-
-.container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #ffffff;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    border-radius: 8px;
-}
-
-.form-step {
-    display: none;
-}
-
-.form-step.active {
-    display: block;
-}
-
-.bottom {
-    display: flex;
-    justify-content: space-between;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #338C9C;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #225E69;
 }
 
 
-
-form {
+.conatnier {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 0;
+    gap: 3vw;
+    background-color: #fafafafa;
 }
 
-.in_data {
+.conatct {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    padding: 3vw;
+    border-radius: 10px;
+}
+
+.conatct form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.conatct form .in_data {
     display: flex;
     flex-direction: column;
     gap: 0.5vw;
 }
 
-.in_data input {
-    width: 100%;
+.conatct form .in_data input {
+    width: 60%;
     height: 3vw;
     padding: 0 1vw;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 10px;
     outline: none;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
 }
 
-.in_data textarea {
-    width: 100%;
+
+.conatct form .in_data textarea {
+    width: 60%;
     height: 6vw;
     padding: 1vw;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 10px;
     outline: none;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.conatct form button {
+    width: 15%;
+    height: 2vw;
+    background-color: green;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.next {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+
+.f_row {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.toggle {
+    width: 50%;
+    height: 4vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+}
+
+.togle_1 p {
+    font-size: 12px;
+}
+
+/* The switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(145deg, #a3a3ff, #6a6aff);
+    border-radius: 30px;
+    box-shadow: inset -3px -3px 5px #9b9bff, inset 3px 3px 5px #7070ff;
+    transition: 0.4s;
+}
+
+/* The knob */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background: linear-gradient(145deg, #ffffff, #cccccc);
+    border-radius: 50%;
+    box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #c1c1c1;
+    transition: 0.4s;
+}
+
+/* When checked, change background and move the knob */
+input:checked + .slider {
+    background: linear-gradient(145deg, #6a6aff, #3b3bbf);
+    box-shadow: inset -3px -3px 5px #7070ff, inset 3px 3px 5px #5a5aff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+    background: linear-gradient(145deg, #ffebeb, #ffcccc);
+    box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #ffb3b3;
 }

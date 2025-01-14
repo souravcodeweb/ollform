@@ -8,89 +8,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#" class="nav-item contact active">
-            <i class="fa-solid fa-address-book"></i>
-            <span>1. Contact</span>
-        </a>
-        
-        <a href="#" class="nav-item steps">
-            <i class="fa-solid fa-forward-step"></i>
-            <span>2. Steps</span>
-        </a>
-        
-        <a href="#" class="nav-item setting">
-            <i class="fa-solid fa-gear"></i>
-            <span>3. Settings</span>
-        </a>
-        
-        <a href="#" class="nav-item overview">
-            <i class="fa-solid fa-eye"></i>
-            <span>4. Overview</span>
-        </a>
-    </nav>
 
-    <!-- Forms -->
-    <div class="container">
-        <!-- Contact Form -->
-        <div class="form-step active" id="contactForm">
-            <h1>Contacts</h1>
+
+    <nav><h2>Wiza</h2></nav>
+
+
+    <div class="conatnier">
+        <div class="conatct">
+            <h1>1. Contacts</h1>
             <form>
-                <div class="in_data">
-                    <label for="schoolName">School name</label>
-                    <input type="text" id="schoolName" placeholder="Enter school name" required>
-                </div>
-                <div class="in_data">
-                    <label for="schoolLocation">School location</label>
-                    <input type="text" id="schoolLocation" placeholder="Enter school location" required>
-                </div>
-                <div class="in_data">
-                    <label for="email">Email ID</label>
-                    <input type="email" id="email" placeholder="Enter email ID" required>
-                </div>
-                <div class="in_data">
-                    <label for="principalProfile">Principal's Profile</label>
-                    <textarea id="principalProfile" placeholder="Enter principal's profile, achievements, and vision" required></textarea>
-                </div>
-                <div class="in_data">
-                    <label for="missionValues">Mission and Values</label>
-                    <textarea id="missionValues" placeholder="Enter school motto, vision statement, and core values" required></textarea>
-                </div>
+              <div class="in_data">
+                <label for="">School name</label>
+                <input type="text" placeholder="Enter scholl name">
+              </div>
+
+              <div class="in_data">
+                <label for="">School location</label>
+                <input type="text" placeholder="Enter scholl location">
+              </div>
+
+              <div class="in_data">
+                <label for="">Email id</label>
+                <input type="email" placeholder="Enter email id">
+              </div>
+
+              <div class="in_data">
+                <label for="">Principal's Profile</label>
+                <textarea placeholder="Enter Principal's Profile, achievments, and vision"></textarea>
+              </div>
+
+              <div class="in_data">
+                <label for="">Mission and Values</label>
+                <textarea placeholder="Enter school motto, vision statement, and core values"></textarea>
+              </div>
+
+              <button>Submit</button>
             </form>
         </div>
 
-        <!-- Steps Form -->
-        <div class="form-step" id="stepsForm">
-            <h1>Steps</h1>
-            <p>Content for steps form goes here...</p>
-        </div>
 
-        <!-- Settings Form -->
-        <div class="form-step" id="settingsForm">
-            <h1>Settings</h1>
-            <p>Tweak these settings to fit your campaign and audience.</p>
+        <!--  -->
 
-            <div class="form">
+        <div class="conatct">
+            <h1>2. settings</h1>
 
-            </div>
-        </div>
+            <form class="next">
+                <div class="f_row">
+                   <div class="text">
+                    <h4>Master Switch</h4>
+                    <p>Ture on off your campaign</p>
+                   </div>
+                    
+                    <div class="toggle">
+                        <div class="togle_1">
+                            <h4>Active</h4>
+                            <p>Campaign ready to send</p>
+                        </div>
+                        <div class="toggle_2">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Overview Section -->
-        <div class="form-step" id="overviewSection">
-            <h1>Overview</h1>
-            <div id="overviewContent">
-                <!-- Overview data will be dynamically populated -->
-            </div>
+            </form>
         </div>
     </div>
+    
 
-    <!-- Bottom Navigation -->
-    <div class="bottom">
-        <button id="prevBtn"><span><i class="fa-solid fa-arrow-left"></i></span> <span>Previous</span></button>
-        <button id="nextBtn"><span>Submit</span> <span><i class="fa-solid fa-arrow-right"></i></span></button>
-    </div>
 
+    
     <script src="./app.js"></script>
 </body>
 </html>
